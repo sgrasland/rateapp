@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container > label {
+    margin-bottom: 0.5rem;
+}
+
+.container > input {
+    height: 2.2rem;
+    border-radius: .25rem;
+    border: 1px solid #ced4da;
+}
+
+.container > input:focus {
+    outline: 0;
+    box-shadow: 0rem 0rem 0.3rem 0.1rem rgba(0,123,255,.25);
+}

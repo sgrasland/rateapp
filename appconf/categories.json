@@ -1,0 +1,176 @@
+{
+    "food-and-beverages": {
+        "cheese": {
+            "image-url": "cheese.png",
+            "form-content":
+                [
+                    {"name": "title", "type": "text", "required": "true"},
+                    {"name": "image", "type": "file", "required": "false"},
+                    {"name": "description", "type": "bigtext", "required": "true"},
+                    {"name": "price", "type": "number", "required": "false"},
+                    {"name": "rating", "type": "number", "required": "true"}
+                ]
+        },
+        "coffee": {
+            "image-url": "coffee.png",
+            "form-content":
+                [
+                    {"name": "title", "type": "text", "required": "true"},
+                    {"name": "image", "type": "file", "required": "false"},
+                    {"name": "description", "type": "bigtext", "required": "true"},
+                    {"name": "origin", "type": "text", "required": "false"},
+                    {"name": "price", "type": "number", "required": "false"},
+                    {"name": "rating", "type": "number", "required": "true"}
+                ]
+        },
+        "recipes": {
+            "image-url": "recipes.png",
+            "form-content":
+                [
+                    {"name": "title", "type": "text", "required": "true"},
+                    {"name": "image", "type": "file", "required": "false"},
+                    {"name": "description", "type": "bigtext", "required": "true"},
+                    {"name": "rating", "type": "number", "required": "true"}
+                ]
+        },
+        "tea": {
+            "image-url": "tea.png",
+            "form-content":
+                [
+                    {"name": "title", "type": "text", "required": "true"},
+                    {"name": "image", "type": "file", "required": "false"},
+                    {"name": "description", "type": "bigtext", "required": "true"},
+                    {"name": "origin", "type": "text", "required": "false"},
+                    {"name": "price", "type": "number", "required": "false"},
+                    {"name": "rating", "type": "number", "required": "true"}
+                ]
+        },
+        "wine": {
+            "image-url": "wine.png",
+            "form-content":
+                [
+                    {"name": "title", "type": "text", "required": "true"},
+                    {"name": "image", "type": "file", "required": "false"},
+                    {"name": "description", "type": "bigtext", "required": "true"},
+                    {
+                        "name": "type", 
+                        "type": "list", 
+                        "required": "false", 
+                        "additionnal-info": ["red", "white", "rosé", "sparkling"]
+                    },
+                    {"name": "origin", "type": "text", "required": "false"},
+                    {"name": "price", "type": "number", "required": "false"},
+                    {"name": "rating", "type": "number", "required": "true"}
+                ]
+        },
+        "beer": {
+            "image-url": "beer.png",
+            "form-content":
+                [
+                    {"name": "title", "type": "text", "required": "true"},
+                    {"name": "image", "type": "file", "required": "false"},
+                    {"name": "description", "type": "bigtext", "required": "true"},
+                    {
+                        "name": "type", 
+                        "type": "list", 
+                        "required": "false", 
+                        "additionnal-info": ["blond", "brown", "amber", "ipa"]
+                    },
+                    {"name": "origin", "type": "text", "required": "false"},
+                    {"name": "price", "type": "number", "required": "false"},
+                    {"name": "rating", "type": "number", "required": "true"}
+                ]
+        }
+    },
+    "hobbies": {
+        "books": {
+            "image-url": "books.png",
+            "form-content":
+                [
+                    {"name": "title", "type": "text", "required": "true"},
+                    {"name": "image", "type": "file", "required": "false"},
+                    {"name": "description", "type": "bigtext", "required": "true"},
+                    {"name": "author", "type": "text", "required": "false"},
+                    {"name": "price", "type": "number", "required": "false"},
+                    {"name": "rating", "type": "number", "required": "true"}
+                ]
+        },
+        "movies-and-tv-shows": {
+            "image-url": "movies-and-tv-shows.png",
+            "form-content":
+                [
+                    {"name": "title", "type": "text", "required": "true"},
+                    {"name": "image", "type": "file", "required": "false"},
+                    {"name": "description", "type": "bigtext", "required": "true"},
+                    {"name": "rating", "type": "number", "required": "true"}
+                ]
+        },
+        "video-games": {
+            "image-url": "video-games.png",
+            "form-content":
+                [
+                    {"name": "title", "type": "text", "required": "true"},
+                    {"name": "image", "type": "file", "required": "false"},
+                    {"name": "description", "type": "bigtext", "required": "true"},
+                    {"name": "editor", "type": "text", "required": "false"},
+                    {"name": "rating", "type": "number", "required": "true"}
+                ]
+        }
+      },
+    "entertainment": {
+        "museums": {
+            "image-url": "museums.png",
+            "form-content":
+                [
+                    {"name": "title", "type": "text", "required": "true"},
+                    {"name": "image", "type": "file", "required": "false"},
+                    {"name": "description", "type": "bigtext", "required": "true"},
+                    {"name": "location", "type": "text", "required": "false"},
+                    {"name": "price", "type": "number", "required": "false"},
+                    {"name": "rating", "type": "number", "required": "true"}
+                ]
+        },
+        "restaurants": {
+            "image-url": "restaurants.png",
+            "form-content":
+                [
+                    {"name": "title", "type": "text", "required": "true"},
+                    {"name": "image", "type": "file", "required": "false"},
+                    {"name": "description", "type": "bigtext", "required": "true"},
+                    {"name": "cooking-type", "type": "text", "required": "false"},
+                    {"name": "location", "type": "text", "required": "false"},
+                    {"name": "price", "type": "number", "required": "false"},
+                    {"name": "rating", "type": "number", "required": "true"}
+                ]
+        },
+        "shows": {
+            "image-url": "shows.png",
+            "form-content":
+                [
+                    {"name": "title", "type": "text", "required": "true"},
+                    {"name": "image", "type": "file", "required": "false"},
+                    {"name": "description", "type": "bigtext", "required": "true"},
+                    {"name": "author", "type": "text", "required": "false"},
+                    {"name": "location", "type": "text", "required": "false"},
+                    {"name": "price", "type": "number", "required": "false"},
+                    {"name": "rating", "type": "number", "required": "true"}
+                ]
+        }
+      },
+    "miscellanous": {
+        "self-care": {
+            "image-url": "self-care.png",
+            "form-content":
+                [
+                    {"name": "title", "type": "text", "required": "true"},
+                    {"name": "image", "type": "file", "required": "false"},
+                    {"name": "description", "type": "bigtext", "required": "true"},
+                    {"name": "product-type", "type": "text", "required": "false"},
+                    {"name": "brand", "type": "text", "required": "false"},
+                    {"name": "price", "type": "number", "required": "false"},
+                    {"name": "rating", "type": "number", "required": "true"}
+                ]
+        }
+      }
+  }
+  

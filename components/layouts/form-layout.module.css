@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 0%;
+}
+.formContainer {
+    width: 50%;
+    min-width: 200px;
+}
+.formHeader {
+    background-color: rgba(0, 0, 0, 0.12);
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0,0,0,.125);
+}
+.formHeader > h4 {
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.fieldsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10% 5% 5% 5%;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.fieldsContainer > * {
+    margin-bottom: 1rem;
+    width: 100%;
+}

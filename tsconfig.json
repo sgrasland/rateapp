@@ -20,6 +20,7 @@
   },
   "include": [
     "next-env.d.ts",
+    "html-elements.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ],

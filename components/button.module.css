@@ -1,0 +1,26 @@
+.common {
+    cursor: pointer;
+    border: 0;
+    padding: 0.75rem 1rem;
+    border-radius: .25rem;
+    font-size: 1rem;
+}
+
+.button {
+    color: var(--button-secondary-color);
+    background-color: var(--button-main-color);
+}
+
+.button:hover {
+    background-color: var(--button-tertiary-color);
+}
+
+.link {
+    color: var(--button-main-color);
+    background-color: var(--button-secondary-color);
+}
+
+.link:hover {
+    color: var(--button-tertiary-color);
+    text-decoration: underline;
+}

@@ -1,0 +1,11 @@
+{
+    "EMailAddress": "Adresse e-mail",
+    "Password": "Mot de passe",
+    "ConfirmPassword": "Confirmez le mot de passe",
+    "Login": "Connexion",
+    "Register": "Inscription",
+    "FirstName": "Prénom",
+    "LastName": "Nom",
+    "Cancel": "Annuler",
+    "PasswordComplexityError" : "Au moins 1 chiffre, 1 majuscule, 1 minuscule et 1 caractère spécial"
+}
