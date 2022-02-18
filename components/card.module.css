@@ -1,0 +1,50 @@
+.container {
+   display: flex;
+   align-items: center;
+   background-color: var(--third-color);
+   border-radius: 5px;
+   box-shadow: 2px 2px 8px rgba(128, 128, 128, 0.623);
+   margin: 10px 0px 10px 0px;
+   height: 90px;
+}
+
+.verticalContainer {
+   display: flex;
+   flex-direction: column;
+   margin: 5px;
+}
+
+.verticalContainer > h5 {
+   color: var(--secondary-color);
+   font-family: 'Poppins';
+   font-size: 12px;
+   margin-top: 5px;
+   margin-bottom: 0px;
+}
+
+.verticalContainer > p {
+   font-family: 'PoppinsReg';
+}
+
+.ratingContainer {
+   align-items: center;
+}
+
+.mainImage {
+   max-height: 40px;
+   margin: auto 5px auto 5px;
+}
+
+.star {
+   height: 18px;
+   margin: 0px;
+}
+
+.desc {
+   font-size: 10px;
+}
+
+.rating {
+   font-size: 12px;
+   margin: 0px;
+}

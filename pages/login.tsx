@@ -5,7 +5,7 @@ import Button from '../components/button'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import { getFormItems } from '../lib/form-utils'
-import MainLayout from '../components/layouts/main-layout'
+import AuthLayout from '../components/layouts/auth-layout'
 import FormLayout from '../components/layouts/form-layout'
 import HorizontalLayout from '../components/layouts/horizontal-layout'
 import { constants as cst } from '../constants'
@@ -14,7 +14,7 @@ export default function Login() {
 
   const router = useRouter();
 
-  const { t } = useTranslation('common');
+  const { t } = useTranslation();
 
   const loginUser = (event: React.SyntheticEvent) => {
     event.preventDefault()
@@ -36,7 +36,7 @@ export default function Login() {
   }
 
   return (
-      <MainLayout>
+      <AuthLayout>
         <FormLayout formTitle={t('Login')} onSubmitFct={loginUser}>
           <TextInput name="email" label={t('EMailAddress')} type="email" isRequired={true} maxLength={100}/>
           <TextInput name="password" label={t('Password')} type="password" isRequired={true}/>
@@ -45,7 +45,7 @@ export default function Login() {
             <Button id="register" label={t('Register')} type="button" styleType="link" />
           </HorizontalLayout>
         </FormLayout>
-      </MainLayout>
+      </AuthLayout>
   )
 }
 

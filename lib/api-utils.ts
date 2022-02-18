@@ -27,3 +27,5 @@ export function buildResponse(
     }
     return JSON.stringify(responseObject)
 }
+
+export const fetcher = (url: RequestInfo) => fetch(url).then((res) => res.json())

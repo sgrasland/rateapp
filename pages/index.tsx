@@ -1,32 +1,30 @@
-import Head from 'next/head'
-import MainLayout, { siteTitle } from '../components/layouts/main-layout'
-import utilStyles from '../styles/utils.module.css'
+import MainLayout from '../components/layouts/main-layout'
 import { GetServerSideProps  } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 import { constants as cst } from '../constants'
 import { getUserIdFromJwt } from '../lib/auth-utils'
+import { getUserCategories, resultArrayElItf } from '../lib/db'
+import Categories from '../components/categories'
 
 export default function Home(
-  { userId }: 
+  { userCategories }: 
   {
-    userId: number
+    userCategories: resultArrayElItf[]
   }
 ) {
+  
+  useTranslation();
+
   return (
-      <MainLayout home>
-        <Head>
-          <title>{siteTitle}</title>
-        </Head>
-        <section className={utilStyles.headingMd}>
-          <p>coucou user {userId}</p>
-        </section>
-        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        </section>
-      </MainLayout>
+    <MainLayout>
+      <Categories userCategories={userCategories} />
+    </MainLayout>
   )
 }
 
-/* SERVER SIDE RENDERING */
-export const getServerSideProps: GetServerSideProps = async context => {
+/* SSR */
+export const getServerSideProps: GetServerSideProps = async (context) => {
   const userId = getUserIdFromJwt(context.req.cookies[cst.ACCESS_TOKEN])
   if (userId === null) {
     return {
@@ -36,8 +34,12 @@ export const getServerSideProps: GetServerSideProps = async context => {
       },
     }
   } else {
+      const userCategories = await getUserCategories(userId)
       return {
-      props: { userId },
+        props: { 
+          userCategories,
+          ...(await serverSideTranslations(context.locale || '', ['common']))
+        },
     }
   }
 }
